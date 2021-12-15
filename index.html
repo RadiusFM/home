@@ -51,14 +51,37 @@
 			<div>&nbsp;
 			</div>
 		</div> 
-		<script>
-		if (Notification && Notification.permission == "granted"){
-		new Notification("Tytuł powiadomienia", {
-		body:"Ciało powiadomienia",
-		icon: "http://www.crimsteam.site90.net/icon.ico"});
-		}
-		</script>
 		
+		<script>
+
+	if (Notification && Notification.permission != "granted"){
+
+		Notification.requestPermission(function(permit){
+
+			// Przy blokadzie wyświetlania powiadomień zwróć wskazówkę
+			if (permit == "denied"){
+
+				document.write("Zalecane jest właczyć powiadomienia!");
+				document.close();
+
+			}
+
+		})
+
+	}
+
+	if (Notification && Notification.permission == "granted"){
+
+		new Notification("WAŻNE!", {
+			body:"Mamy współpracę z Piotrem (Kanałem Potik na stronie YouTube)! Serdecznie zapraszamy naszych stałych, jako i również nowych słuchaczy do kliknięcia na jego nowy film o tematyce wigilijnej, który zrobił specjalnie dla was!",
+			icon: "https://raw.githubusercontent.com/RadiusFM/html/main/Nowy%20projekt.png"
+		});
+
+	}
+
+</script>
+		
+<!--KONIEC_POWIADOMIENIE-->
 		
 		<p>⁣ </p>
 		<div id="contentleft">
