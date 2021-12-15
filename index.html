@@ -1,13 +1,18 @@
 <title>🎶radiusfm - radio internetowe🎶</title>
 <link rel="icon" href="https://img.webme.com/pic/s/stacjaradiowa/pobrane.png">
-
-<head>
-<script src="push.min.js">
+<script src="push.min.js"></script>
+<script>
+${
     Push.create('Cześć!', {
     body: 'Zobacz nowy artykuł na Devcorner - "Najprostszy sposób na pokazanie powiadomień Push".',
     icon: 'icon.png',
-    timeout: 6000, });
-	</script>
+    timeout: 6000, 
+    });
+});
+</script>
+
+<head>
+	
 
 <style type="text/css">
 	body {	
