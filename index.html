@@ -119,4 +119,10 @@ k:q;g=l>r?l:r;for(var d=0;d<p.childNodes.length;d++){var e=p.childNodes[d];e.off
 			</div>
 			</div>
 		</div>
-</body>       
+</body>    
+	
+	
+	
+	
+	
+	<div class="rde-player-volume ng-scope" ng-if="volumeButtonShown()"><button type="button" ng-click="toggleVolumeSlider()" class="rde-player-btn-volume rde-btn rde-btn-default" ng-class="{'is-muted': player.isMuted(), 'is-low': !player.isMuted() &amp;&amp; player.volume.current < 50}"></button><div class="dropdown-menu rde-dropdown-menu-volume" ng-show="showVolumeSlider"><div class="ngrs-range-slider ng-isolate-scope ngrs-vertical" range-slider="" min="0" max="100" step="10" pin-handle="min" model-min="min" model-max="$parent.$parent.rangeVolume" show-values="false" orientation="vertical" disabled="disabled"><div class="ngrs-runner"><div class="ngrs-handle ngrs-handle-min" style="top: 0%; display: none;"><i></i></div><div class="ngrs-handle ngrs-handle-max" style="top: 10%; display: block;"><i></i></div><div class="ngrs-join" style="top: 0%; bottom: 90%;"></div></div><div class="ngrs-value ngrs-value-min ng-binding ng-hide" ng-show="showValues">0</div><div class="ngrs-value ngrs-value-max ng-binding ng-hide" ng-show="showValues">10</div></div></div></div>
