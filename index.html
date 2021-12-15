@@ -25,7 +25,8 @@
 		width:175px;
 		height: 925px;
 		float:right;
-		background-color:#FFFF00;
+		background-color:#64e646;
+		opacity: .8;
 		border-radius:15px;
 		}
 	#contentcenter {
@@ -54,26 +55,10 @@
 		
 		<script>
 
-	if (Notification && Notification.permission != "granted"){
-
-		Notification.requestPermission(function(permit){
-
-			// Przy blokadzie wyświetlania powiadomień zwróć wskazówkę
-			if (permit == "denied"){
-
-				document.write("Zalecane jest właczyć powiadomienia!");
-				document.close();
-
-			}
-
-		})
-
-	}
-
 	if (Notification && Notification.permission == "granted"){
 
 		new Notification("WAŻNE!", {
-			body:"Mamy współpracę z Piotrem (Kanałem Potik na stronie YouTube)! Serdecznie zapraszamy naszych stałych, jako i również nowych słuchaczy do kliknięcia na jego nowy film o tematyce wigilijnej, który zrobił specjalnie dla was!",
+			body:"Mamy współpracę z kanałem 🔥Potik🔥 na YouTube! Więcej informacji pod reklamą na naszej stronie📃!",
 			icon: "https://raw.githubusercontent.com/RadiusFM/html/main/Nowy%20projekt.png"
 		});
 
